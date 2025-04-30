@@ -33,3 +33,593 @@
 2025-04-30 14:26:29.346 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
 2025-04-30 14:26:29.479 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
 2025-04-30 14:26:29.479 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142626_1f77beb7)
+2025-04-30 14:27:05.667 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:27:05.716 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:27:05.717 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3)
+2025-04-30 14:27:05.733 | WARNING  | MLExpRecords.experiment:set_training_config:206 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 14:27:05.734 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:05.736 | INFO     | MLExpRecords.experiment:set_training_config:382 - 设置训练配置信息完成
+2025-04-30 14:27:05.736 | INFO     | MLExpRecords.experiment:log_epoch:636 - 创建新轮次 'epoch_1'
+2025-04-30 14:27:05.736 | INFO     | MLExpRecords.experiment:log_epoch:659 - 记录轮次 'epoch_1'
+2025-04-30 14:27:05.754 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:05.754 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 14:27:05.785 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:05.785 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 14:27:05.805 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:05.806 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 14:27:05.835 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:05.835 | INFO     | MLExpRecords.experiment:set_remarks:389 - 设置实验备注
+2025-04-30 14:27:05.852 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:05.869 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142703_f5c0b9a3) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:06.936 | INFO     | MLExpRecords.experiment:load_from_yaml:896 - 从YAML文件加载实验对象: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142703_f5c0b9a3\experiment_info.yaml
+2025-04-30 14:27:07.141 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:27:09.658 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:27:09.790 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:27:09.790 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142706_f5273514)
+2025-04-30 14:27:46.048 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:27:46.197 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:27:46.198 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644)
+2025-04-30 14:27:46.220 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:46.220 | WARNING  | MLExpRecords.experiment:set_training_config:206 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 14:27:46.222 | INFO     | MLExpRecords.experiment:set_training_config:382 - 设置训练配置信息完成
+2025-04-30 14:27:46.222 | INFO     | MLExpRecords.experiment:log_epoch:636 - 创建新轮次 'epoch_1'
+2025-04-30 14:27:46.222 | INFO     | MLExpRecords.experiment:log_epoch:659 - 记录轮次 'epoch_1'
+2025-04-30 14:27:46.246 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:46.246 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 14:27:46.269 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:46.269 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 14:27:46.292 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:46.292 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 14:27:46.316 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:46.316 | INFO     | MLExpRecords.experiment:set_remarks:389 - 设置实验备注
+2025-04-30 14:27:46.339 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:46.362 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142743_8d1b7644) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:47.458 | INFO     | MLExpRecords.experiment:load_from_yaml:896 - 从YAML文件加载实验对象: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142743_8d1b7644\experiment_info.yaml
+2025-04-30 14:27:47.646 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:27:50.084 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:27:50.221 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:27:50.221 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142747_15f4505b)
+2025-04-30 14:31:15.777 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:437 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:31:15.915 | INFO     | MLExpRecords.experiment:_create_stage:101 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:31:15.916 | INFO     | MLExpRecords.experiment:__init__:79 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a)
+2025-04-30 14:31:15.932 | WARNING  | MLExpRecords.experiment:set_training_config:210 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 14:31:15.932 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:15.936 | INFO     | MLExpRecords.experiment:set_training_config:386 - 设置训练配置信息完成
+2025-04-30 14:31:15.937 | INFO     | MLExpRecords.experiment:log_epoch:640 - 创建新轮次 'epoch_1'
+2025-04-30 14:31:15.937 | INFO     | MLExpRecords.experiment:log_epoch:663 - 记录轮次 'epoch_1'
+2025-04-30 14:31:15.955 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:15.956 | INFO     | MLExpRecords.experiment:log_batch:718 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 14:31:15.974 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:15.974 | INFO     | MLExpRecords.experiment:log_batch:718 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 14:31:15.994 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:15.995 | INFO     | MLExpRecords.experiment:log_batch:718 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 14:31:16.021 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:16.021 | INFO     | MLExpRecords.experiment:set_remarks:393 - 设置实验备注
+2025-04-30 14:31:16.041 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:16.061 | INFO     | MLExpRecords.experiment:save_task:511 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143115_317b933a) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:17.130 | INFO     | MLExpRecords.experiment:load_from_yaml:900 - 从YAML文件加载实验对象: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_143115_317b933a\experiment_info.yaml
+2025-04-30 14:31:17.306 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:437 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:31:17.485 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:437 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:31:17.617 | INFO     | MLExpRecords.experiment:_create_stage:101 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:31:17.617 | INFO     | MLExpRecords.experiment:__init__:79 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_143117_b740a546)
+2025-04-30 14:43:01.782 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:437 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:43:01.941 | INFO     | MLExpRecords.experiment:_create_stage:101 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:43:01.943 | INFO     | MLExpRecords.experiment:__init__:79 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_144301_394c05c4)
+2025-04-30 14:43:01.943 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:01.945 | WARNING  | MLExpRecords.experiment:set_training_config:210 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 14:43:01.948 | INFO     | MLExpRecords.experiment:set_training_config:386 - 设置训练配置信息完成
+2025-04-30 14:43:01.948 | INFO     | MLExpRecords.experiment:log_epoch:677 - 创建新轮次 'epoch_1'
+2025-04-30 14:43:01.948 | INFO     | MLExpRecords.experiment:log_epoch:700 - 记录轮次 'epoch_1'
+2025-04-30 14:43:01.949 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:01.949 | INFO     | MLExpRecords.experiment:log_batch:755 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 14:43:01.950 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:01.950 | INFO     | MLExpRecords.experiment:log_batch:755 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 14:43:01.951 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:01.951 | INFO     | MLExpRecords.experiment:log_batch:755 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 14:43:01.951 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:01.952 | INFO     | MLExpRecords.experiment:set_remarks:393 - 设置实验备注
+2025-04-30 14:43:01.952 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:01.953 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.236 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:437 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:43:45.360 | INFO     | MLExpRecords.experiment:_create_stage:101 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:43:45.361 | INFO     | MLExpRecords.experiment:__init__:79 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_144344_0252936f)
+2025-04-30 14:43:45.362 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.362 | WARNING  | MLExpRecords.experiment:set_training_config:210 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 14:43:45.364 | INFO     | MLExpRecords.experiment:set_training_config:386 - 设置训练配置信息完成
+2025-04-30 14:43:45.364 | INFO     | MLExpRecords.experiment:log_epoch:677 - 创建新轮次 'epoch_1'
+2025-04-30 14:43:45.364 | INFO     | MLExpRecords.experiment:log_epoch:700 - 记录轮次 'epoch_1'
+2025-04-30 14:43:45.364 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.365 | INFO     | MLExpRecords.experiment:log_batch:755 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 14:43:45.365 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.365 | INFO     | MLExpRecords.experiment:log_batch:755 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 14:43:45.365 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.366 | INFO     | MLExpRecords.experiment:log_batch:755 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 14:43:45.366 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.366 | INFO     | MLExpRecords.experiment:set_remarks:393 - 设置实验备注
+2025-04-30 14:43:45.366 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 14:43:45.367 | ERROR    | MLExpRecords.experiment:save_task:551 - 自动保存 Experiment 'NoTorchTest' 失败: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-30 15:02:17.272 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:434 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:02:17.411 | INFO     | MLExpRecords.experiment:_create_stage:98 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:02:17.412 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:02:17.435 | WARNING  | MLExpRecords.experiment:set_training_config:207 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:02:17.457 | ERROR    | MLExpRecords.experiment:save_task:563 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:02:17.460 | INFO     | MLExpRecords.experiment:set_training_config:383 - 设置训练配置信息完成
+2025-04-30 15:02:17.461 | INFO     | MLExpRecords.experiment:log_epoch:700 - 创建新轮次 'epoch_1'
+2025-04-30 15:02:17.461 | INFO     | MLExpRecords.experiment:log_epoch:723 - 记录轮次 'epoch_1'
+2025-04-30 15:02:17.581 | ERROR    | MLExpRecords.experiment:save_task:563 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:02:17.582 | INFO     | MLExpRecords.experiment:log_batch:778 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:02:17.830 | ERROR    | MLExpRecords.experiment:save_task:563 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:02:17.831 | INFO     | MLExpRecords.experiment:log_batch:778 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:02:18.095 | ERROR    | MLExpRecords.experiment:save_task:563 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:02:18.095 | INFO     | MLExpRecords.experiment:log_batch:778 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:02:18.144 | ERROR    | MLExpRecords.experiment:save_task:563 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:02:18.144 | INFO     | MLExpRecords.experiment:set_remarks:390 - 设置实验备注
+2025-04-30 15:02:18.422 | ERROR    | MLExpRecords.experiment:save_task:563 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:02:18.683 | INFO     | MLExpRecords.experiment:save_task:545 - 已有相同内容文件存在，跳过保存: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段\experiment_info_4.yaml
+2025-04-30 15:03:24.588 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:426 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:03:24.712 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:03:24.713 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:03:24.753 | WARNING  | MLExpRecords.experiment:set_training_config:206 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:03:24.758 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:24.760 | INFO     | MLExpRecords.experiment:set_training_config:382 - 设置训练配置信息完成
+2025-04-30 15:03:24.760 | INFO     | MLExpRecords.experiment:log_epoch:692 - 创建新轮次 'epoch_1'
+2025-04-30 15:03:24.760 | INFO     | MLExpRecords.experiment:log_epoch:715 - 记录轮次 'epoch_1'
+2025-04-30 15:03:25.181 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:25.182 | INFO     | MLExpRecords.experiment:log_batch:770 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:03:25.298 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:25.298 | INFO     | MLExpRecords.experiment:log_batch:770 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:03:25.781 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:25.781 | INFO     | MLExpRecords.experiment:log_batch:770 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:03:26.220 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:26.314 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:37.253 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:426 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:03:37.399 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:03:37.400 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:03:37.447 | WARNING  | MLExpRecords.experiment:set_training_config:206 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:03:37.464 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:37.465 | INFO     | MLExpRecords.experiment:set_training_config:382 - 设置训练配置信息完成
+2025-04-30 15:03:37.465 | INFO     | MLExpRecords.experiment:log_epoch:692 - 创建新轮次 'epoch_1'
+2025-04-30 15:03:37.465 | INFO     | MLExpRecords.experiment:log_epoch:715 - 记录轮次 'epoch_1'
+2025-04-30 15:03:37.959 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:37.960 | INFO     | MLExpRecords.experiment:log_batch:770 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:03:38.429 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:38.430 | INFO     | MLExpRecords.experiment:log_batch:770 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:03:38.480 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:38.481 | INFO     | MLExpRecords.experiment:log_batch:770 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:03:39.069 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:03:39.123 | ERROR    | MLExpRecords.experiment:save_task:555 - 自动保存 Experiment 'NoTorchTest' 失败: name 'stage_id_str' is not defined
+2025-04-30 15:07:21.683 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:422 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:07:21.729 | INFO     | MLExpRecords.experiment:_create_stage:93 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:07:21.730 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:07:21.732 | WARNING  | MLExpRecords.experiment:set_training_config:202 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:07:21.733 | ERROR    | MLExpRecords.experiment:save_task:537 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:07:21.734 | INFO     | MLExpRecords.experiment:set_training_config:378 - 设置训练配置信息完成
+2025-04-30 15:07:21.735 | INFO     | MLExpRecords.experiment:log_epoch:674 - 创建新轮次 'epoch_1'
+2025-04-30 15:07:21.735 | INFO     | MLExpRecords.experiment:log_epoch:697 - 记录轮次 'epoch_1'
+2025-04-30 15:07:21.736 | ERROR    | MLExpRecords.experiment:save_task:537 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:07:21.737 | INFO     | MLExpRecords.experiment:log_batch:752 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:07:21.739 | ERROR    | MLExpRecords.experiment:save_task:537 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:07:21.739 | INFO     | MLExpRecords.experiment:log_batch:752 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:07:21.741 | ERROR    | MLExpRecords.experiment:save_task:537 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:07:21.742 | INFO     | MLExpRecords.experiment:log_batch:752 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:07:21.745 | ERROR    | MLExpRecords.experiment:save_task:537 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:07:21.748 | ERROR    | MLExpRecords.experiment:save_task:537 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:10:51.188 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:10:51.226 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:10:51.227 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:10:51.228 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:10:51.230 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:10:51.230 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:10:51.230 | INFO     | MLExpRecords.experiment:log_epoch:675 - 创建新轮次 'epoch_1'
+2025-04-30 15:10:51.230 | INFO     | MLExpRecords.experiment:log_epoch:698 - 记录轮次 'epoch_1'
+2025-04-30 15:10:51.231 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:10:51.231 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:10:51.232 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:10:51.233 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:10:51.234 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:10:51.234 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:10:51.235 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:10:51.237 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:11:08.069 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:11:08.116 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:11:08.117 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:11:08.118 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:11:08.119 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:11:08.120 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:11:08.121 | INFO     | MLExpRecords.experiment:log_epoch:675 - 创建新轮次 'epoch_1'
+2025-04-30 15:11:08.121 | INFO     | MLExpRecords.experiment:log_epoch:698 - 记录轮次 'epoch_1'
+2025-04-30 15:11:08.123 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:11:08.123 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:11:08.125 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:11:08.126 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:11:08.128 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:11:08.129 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:11:08.131 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:11:08.133 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:32.558 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:12:32.599 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:12:32.600 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:12:32.601 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:32.602 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:12:32.603 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:12:32.604 | INFO     | MLExpRecords.experiment:log_epoch:675 - 创建新轮次 'epoch_1'
+2025-04-30 15:12:32.604 | INFO     | MLExpRecords.experiment:log_epoch:698 - 记录轮次 'epoch_1'
+2025-04-30 15:12:32.607 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:32.607 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:12:32.610 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:32.610 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:12:32.614 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:32.615 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:12:32.619 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:32.622 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:56.561 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:12:56.605 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:12:56.606 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:12:56.607 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:56.607 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:12:56.609 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:12:56.609 | INFO     | MLExpRecords.experiment:log_epoch:675 - 创建新轮次 'epoch_1'
+2025-04-30 15:12:56.609 | INFO     | MLExpRecords.experiment:log_epoch:698 - 记录轮次 'epoch_1'
+2025-04-30 15:12:56.613 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:56.613 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:12:56.617 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:56.617 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:12:56.621 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:56.621 | INFO     | MLExpRecords.experiment:log_batch:753 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:12:56.625 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:56.630 | ERROR    | MLExpRecords.experiment:save_task:538 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:12:57.629 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:912 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段
+2025-04-30 15:16:23.463 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:16:23.504 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:16:23.505 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:16:23.506 | ERROR    | MLExpRecords.experiment:save_task:539 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:16:23.507 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:16:23.508 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:16:23.508 | INFO     | MLExpRecords.experiment:log_epoch:676 - 创建新轮次 'epoch_1'
+2025-04-30 15:16:23.508 | INFO     | MLExpRecords.experiment:log_epoch:699 - 记录轮次 'epoch_1'
+2025-04-30 15:16:23.514 | ERROR    | MLExpRecords.experiment:save_task:539 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:16:23.514 | INFO     | MLExpRecords.experiment:log_batch:754 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:16:23.519 | ERROR    | MLExpRecords.experiment:save_task:539 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:16:23.519 | INFO     | MLExpRecords.experiment:log_batch:754 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:16:23.525 | ERROR    | MLExpRecords.experiment:save_task:539 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:16:23.525 | INFO     | MLExpRecords.experiment:log_batch:754 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:16:23.532 | ERROR    | MLExpRecords.experiment:save_task:539 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:16:23.537 | ERROR    | MLExpRecords.experiment:save_task:539 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:16:24.534 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:913 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段
+2025-04-30 15:18:02.228 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:18:02.459 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:18:02.481 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:18:02.483 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:18:02.483 | ERROR    | MLExpRecords.experiment:save_task:523 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:02.486 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:18:02.486 | INFO     | MLExpRecords.experiment:log_epoch:660 - 创建新轮次 'epoch_1'
+2025-04-30 15:18:02.487 | INFO     | MLExpRecords.experiment:log_epoch:683 - 记录轮次 'epoch_1'
+2025-04-30 15:18:02.488 | ERROR    | MLExpRecords.experiment:save_task:523 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:02.489 | INFO     | MLExpRecords.experiment:log_batch:738 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:18:02.490 | WARNING  | MLExpRecords.experiment:save_task:512 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段\20250430_151802.yaml
+2025-04-30 15:18:02.490 | INFO     | MLExpRecords.experiment:log_batch:738 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:18:02.491 | WARNING  | MLExpRecords.experiment:save_task:512 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段\20250430_151802.yaml
+2025-04-30 15:18:02.491 | INFO     | MLExpRecords.experiment:log_batch:738 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:18:02.493 | WARNING  | MLExpRecords.experiment:save_task:512 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段\20250430_151802.yaml
+2025-04-30 15:18:02.494 | WARNING  | MLExpRecords.experiment:save_task:512 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段\20250430_151802.yaml
+2025-04-30 15:18:03.509 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:897 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段
+2025-04-30 15:18:45.632 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:18:45.674 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:18:45.676 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:18:45.677 | ERROR    | MLExpRecords.experiment:save_task:524 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:45.678 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:18:45.679 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:18:45.679 | INFO     | MLExpRecords.experiment:log_epoch:661 - 创建新轮次 'epoch_1'
+2025-04-30 15:18:45.679 | INFO     | MLExpRecords.experiment:log_epoch:684 - 记录轮次 'epoch_1'
+2025-04-30 15:18:45.680 | ERROR    | MLExpRecords.experiment:save_task:524 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:45.681 | INFO     | MLExpRecords.experiment:log_batch:739 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:18:45.681 | ERROR    | MLExpRecords.experiment:save_task:524 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:45.682 | INFO     | MLExpRecords.experiment:log_batch:739 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:18:45.683 | ERROR    | MLExpRecords.experiment:save_task:524 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:45.683 | INFO     | MLExpRecords.experiment:log_batch:739 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:18:45.684 | ERROR    | MLExpRecords.experiment:save_task:524 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:45.685 | ERROR    | MLExpRecords.experiment:save_task:524 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'hardware_info'
+2025-04-30 15:18:46.699 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:898 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-DummyDataset-实验_NoTorchTest_的主阶段
+2025-04-30 15:32:52.871 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:32:52.909 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:32:52.909 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:32:52.911 | ERROR    | MLExpRecords.experiment:save_task:526 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'network_config'
+2025-04-30 15:32:52.911 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:32:52.913 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:32:52.913 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:32:52.913 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:32:52.914 | ERROR    | MLExpRecords.experiment:save_task:526 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'network_config'
+2025-04-30 15:32:52.914 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:32:52.914 | ERROR    | MLExpRecords.experiment:save_task:526 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'network_config'
+2025-04-30 15:32:52.915 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:32:52.915 | ERROR    | MLExpRecords.experiment:save_task:526 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'network_config'
+2025-04-30 15:32:52.915 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:32:52.916 | ERROR    | MLExpRecords.experiment:save_task:526 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'network_config'
+2025-04-30 15:32:52.916 | ERROR    | MLExpRecords.experiment:save_task:526 - 自动保存 Experiment 'NoTorchTest' 失败: 'Stage' object has no attribute 'network_config'
+2025-04-30 15:32:53.930 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:900 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段
+2025-04-30 15:34:01.611 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:34:24.872 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:34:58.010 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:34:58.067 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:34:58.069 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:34:58.072 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:34:58.078 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:35:28.802 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153458.yaml
+2025-04-30 15:35:30.440 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:35:30.441 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:35:36.991 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153532.yaml
+2025-04-30 15:35:36.992 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:35:37.016 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153536.yaml
+2025-04-30 15:35:37.016 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:35:37.043 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153537.yaml
+2025-04-30 15:35:37.043 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:35:37.044 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153537.yaml
+2025-04-30 15:35:37.045 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153537.yaml
+2025-04-30 15:35:38.058 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:900 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段
+2025-04-30 15:36:10.810 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:36:10.853 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:36:10.854 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:36:10.859 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153610.yaml
+2025-04-30 15:36:10.859 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:36:10.861 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:36:10.861 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:36:10.861 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:36:10.861 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153610.yaml
+2025-04-30 15:36:10.863 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:36:10.863 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153610.yaml
+2025-04-30 15:36:10.863 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:36:10.864 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153610.yaml
+2025-04-30 15:36:10.864 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:36:10.864 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153610.yaml
+2025-04-30 15:36:10.864 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153610.yaml
+2025-04-30 15:36:11.880 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:900 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段
+2025-04-30 15:36:57.597 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:36:57.638 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:36:57.638 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:36:57.643 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153657.yaml
+2025-04-30 15:36:57.643 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:36:57.645 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:36:57.645 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:36:57.645 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:36:57.646 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153657.yaml
+2025-04-30 15:36:57.646 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:36:57.647 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153657.yaml
+2025-04-30 15:36:57.647 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:36:57.647 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153657.yaml
+2025-04-30 15:36:57.647 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:36:57.648 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153657.yaml
+2025-04-30 15:36:57.648 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153657.yaml
+2025-04-30 15:36:58.653 | ERROR    | MLExpRecords.experiment:load_experiment_from_yaml:900 - 指定的yaml文件不存在: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段
+2025-04-30 15:38:41.857 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:38:41.899 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:38:41.900 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:38:41.906 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153841.yaml
+2025-04-30 15:38:41.906 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:38:41.907 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:38:41.908 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:38:41.908 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:38:41.908 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153841.yaml
+2025-04-30 15:38:41.909 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:38:41.909 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153841.yaml
+2025-04-30 15:38:41.910 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:38:41.910 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153841.yaml
+2025-04-30 15:38:41.911 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:38:41.911 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153841.yaml
+2025-04-30 15:38:41.912 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153841.yaml
+2025-04-30 15:39:33.828 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:39:33.870 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:39:33.872 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:39:33.881 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153933.yaml
+2025-04-30 15:39:33.881 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:39:33.883 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:39:33.883 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:39:33.883 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:39:33.884 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153933.yaml
+2025-04-30 15:39:33.884 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:39:33.885 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153933.yaml
+2025-04-30 15:39:33.885 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:39:33.886 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153933.yaml
+2025-04-30 15:39:33.886 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:39:33.887 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153933.yaml
+2025-04-30 15:39:33.888 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153933.yaml
+2025-04-30 15:39:47.677 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:39:47.718 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:39:47.718 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:39:47.723 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:39:47.723 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153947.yaml
+2025-04-30 15:39:47.725 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:39:47.725 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:39:47.725 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:39:47.725 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153947.yaml
+2025-04-30 15:39:47.726 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:39:47.726 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153947.yaml
+2025-04-30 15:39:47.726 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:39:47.726 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153947.yaml
+2025-04-30 15:39:47.727 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:39:47.727 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153947.yaml
+2025-04-30 15:39:47.727 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_153947.yaml
+2025-04-30 15:40:20.031 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:40:20.083 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:40:20.084 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:40:20.094 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:40:20.094 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:40:20.096 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:40:20.096 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:40:20.096 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:40:20.097 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:40:20.097 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:40:20.097 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:40:20.098 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:40:20.098 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:40:20.098 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:40:20.099 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:40:20.099 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:40:21.335 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:40:21.519 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:40:21.562 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:40:21.562 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 '未命名实验' (ID: 未命名实验_0f76c55b)
+2025-04-30 15:40:21.573 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment '未命名实验' (ID: 未命名实验_0f76c55b, Stage: None-None-实验_未命名实验_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\未命名实验\None-None-实验_未命名实验_的主阶段\20250430_154021.yaml
+2025-04-30 15:40:21.695 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:40:21.877 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:40:21.922 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:40:21.923 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:40:21.923 | INFO     | MLExpRecords.experiment:load_experiment_from_yaml:912 - 成功从文件加载 Experiment 实例: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154019.yaml
+2025-04-30 15:43:40.700 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:43:40.750 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:43:40.752 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:43:40.755 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:43:40.761 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:43:40.839 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:43:40.840 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:43:40.840 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:43:40.841 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:43:40.841 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:43:40.843 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:43:40.843 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:43:40.844 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:43:40.845 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:43:40.845 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:43:40.846 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:43:42.071 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:43:42.315 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:43:42.382 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:43:42.384 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 '未命名实验' (ID: 未命名实验_0f76c55b)
+2025-04-30 15:43:42.412 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment '未命名实验' (ID: 未命名实验_0f76c55b, Stage: None-None-实验_未命名实验_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\未命名实验\None-None-实验_未命名实验_的主阶段\20250430_154341.yaml
+2025-04-30 15:44:21.704 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:44:21.971 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:44:22.028 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:44:22.028 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:47:35.685 | INFO     | MLExpRecords.experiment:load_experiment_from_yaml:912 - 成功从文件加载 Experiment 实例: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154340.yaml
+2025-04-30 15:48:27.619 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:48:27.664 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:48:27.666 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:48:27.676 | WARNING  | MLExpRecords.experiment:set_training_config:203 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 15:48:27.684 | INFO     | MLExpRecords.experiment:set_training_config:379 - 设置训练配置信息完成
+2025-04-30 15:48:27.737 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 15:48:27.738 | INFO     | MLExpRecords.experiment:log_epoch:663 - 创建新轮次 'epoch_1'
+2025-04-30 15:48:27.738 | INFO     | MLExpRecords.experiment:log_epoch:686 - 记录轮次 'epoch_1'
+2025-04-30 15:48:27.739 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 15:48:27.739 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 15:48:27.740 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 15:48:27.741 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 15:48:27.742 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 15:48:27.742 | INFO     | MLExpRecords.experiment:log_batch:741 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 15:48:27.743 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 15:48:27.744 | WARNING  | MLExpRecords.experiment:save_task:514 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 15:48:29.002 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:48:29.226 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:48:29.283 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:48:29.285 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 '未命名实验' (ID: 未命名实验_0f76c55b)
+2025-04-30 15:48:29.304 | INFO     | MLExpRecords.experiment:save_task:522 - Experiment '未命名实验' (ID: 未命名实验_0f76c55b, Stage: None-None-实验_未命名实验_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\未命名实验\None-None-实验_未命名实验_的主阶段\20250430_154828.yaml
+2025-04-30 15:48:29.450 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:48:29.692 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:423 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 15:48:29.738 | INFO     | MLExpRecords.experiment:_create_stage:94 - 创建实验阶段并自动获取环境信息
+2025-04-30 15:48:29.739 | INFO     | MLExpRecords.experiment:__init__:76 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 15:48:29.739 | INFO     | MLExpRecords.experiment:load_experiment_from_yaml:912 - 成功从文件加载 Experiment 实例: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_154827.yaml
+2025-04-30 17:53:13.378 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:13.441 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:53:13.444 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 17:53:13.448 | WARNING  | MLExpRecords.experiment:set_training_config:251 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 17:53:13.456 | INFO     | MLExpRecords.experiment:set_training_config:427 - 设置训练配置信息完成
+2025-04-30 17:53:13.589 | INFO     | MLExpRecords.experiment:save_task:570 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:13.590 | INFO     | MLExpRecords.experiment:log_epoch:709 - 创建新轮次 'epoch_1'
+2025-04-30 17:53:13.590 | INFO     | MLExpRecords.experiment:log_epoch:730 - 记录轮次 'epoch_1'
+2025-04-30 17:53:13.590 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:13.591 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 17:53:13.591 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:13.592 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 17:53:13.592 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:13.592 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 17:53:13.593 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:13.594 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:14.825 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:15.024 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:15.077 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:53:15.078 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 '未命名实验' (ID: 未命名实验_0f76c55b)
+2025-04-30 17:53:15.093 | INFO     | MLExpRecords.experiment:save_task:570 - Experiment '未命名实验' (ID: 未命名实验_0f76c55b, Stage: None-None-实验_未命名实验_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\未命名实验\None-None-实验_未命名实验_的主阶段\20250430_175314.yaml
+2025-04-30 17:53:15.220 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:15.400 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:15.447 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:53:15.447 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 17:53:15.447 | INFO     | MLExpRecords.experiment:load_experiment_from_yaml:955 - 成功从文件加载 Experiment 实例: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175312.yaml
+2025-04-30 17:53:44.469 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:44.518 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:53:44.519 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 17:53:44.522 | WARNING  | MLExpRecords.experiment:set_training_config:251 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 17:53:44.528 | INFO     | MLExpRecords.experiment:set_training_config:427 - 设置训练配置信息完成
+2025-04-30 17:53:44.582 | INFO     | MLExpRecords.experiment:save_task:570 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:53:44.583 | INFO     | MLExpRecords.experiment:log_epoch:709 - 创建新轮次 'epoch_1'
+2025-04-30 17:53:44.584 | INFO     | MLExpRecords.experiment:log_epoch:730 - 记录轮次 'epoch_1'
+2025-04-30 17:53:44.584 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:53:44.585 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 17:53:44.586 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:53:44.586 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 17:53:44.587 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:53:44.588 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 17:53:44.588 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:53:44.590 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:53:45.804 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:46.025 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:46.071 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:53:46.073 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 '未命名实验' (ID: 未命名实验_0f76c55b)
+2025-04-30 17:53:46.094 | INFO     | MLExpRecords.experiment:save_task:570 - Experiment '未命名实验' (ID: 未命名实验_0f76c55b, Stage: None-None-实验_未命名实验_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\未命名实验\None-None-实验_未命名实验_的主阶段\20250430_175345.yaml
+2025-04-30 17:53:46.242 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:46.468 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:53:46.519 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:53:46.520 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 17:53:46.520 | INFO     | MLExpRecords.experiment:load_experiment_from_yaml:955 - 成功从文件加载 Experiment 实例: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175344.yaml
+2025-04-30 17:56:04.802 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 17:56:04.876 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 17:56:04.878 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 17:56:04.881 | WARNING  | MLExpRecords.experiment:set_training_config:251 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 17:56:04.887 | INFO     | MLExpRecords.experiment:set_training_config:427 - 设置训练配置信息完成
+2025-04-30 17:56:04.960 | INFO     | MLExpRecords.experiment:save_task:570 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175604.yaml
+2025-04-30 17:56:04.963 | INFO     | MLExpRecords.experiment:log_epoch:709 - 创建新轮次 'epoch_1'
+2025-04-30 17:56:04.964 | INFO     | MLExpRecords.experiment:log_epoch:730 - 记录轮次 'epoch_1'
+2025-04-30 17:56:04.965 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175604.yaml
+2025-04-30 17:56:04.970 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175604.yaml
+2025-04-30 17:58:10.298 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 17:58:13.155 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175604.yaml
+2025-04-30 17:59:54.387 | INFO     | MLExpRecords.experiment:log_batch:785 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 17:59:54.391 | WARNING  | MLExpRecords.experiment:save_task:562 - 保存日志时存在相同该文件名:D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_175604.yaml
+2025-04-30 18:00:44.840 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 18:00:44.892 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 18:00:44.893 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 18:00:44.896 | WARNING  | MLExpRecords.experiment:set_training_config:251 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 18:00:44.901 | INFO     | MLExpRecords.experiment:set_training_config:427 - 设置训练配置信息完成
+2025-04-30 18:00:44.956 | INFO     | MLExpRecords.experiment:save_task:566 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180044.yaml
+2025-04-30 18:00:44.959 | INFO     | MLExpRecords.experiment:log_epoch:705 - 创建新轮次 'epoch_1'
+2025-04-30 18:00:44.960 | INFO     | MLExpRecords.experiment:log_epoch:726 - 记录轮次 'epoch_1'
+2025-04-30 18:00:44.983 | INFO     | MLExpRecords.experiment:save_task:566 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180044.yaml
+2025-04-30 18:00:45.007 | INFO     | MLExpRecords.experiment:save_task:566 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180044.yaml
+2025-04-30 18:00:48.025 | INFO     | MLExpRecords.experiment:log_batch:781 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 18:00:48.026 | INFO     | MLExpRecords.experiment:log_batch:781 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 18:00:48.051 | INFO     | MLExpRecords.experiment:save_task:566 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180044.yaml
+2025-04-30 18:00:48.051 | INFO     | MLExpRecords.experiment:log_batch:781 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 18:00:48.077 | INFO     | MLExpRecords.experiment:save_task:566 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180044.yaml
+2025-04-30 18:01:21.036 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 18:01:21.082 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 18:01:21.083 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 18:01:21.088 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml
+2025-04-30 18:01:21.089 | WARNING  | MLExpRecords.experiment:set_training_config:251 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 18:01:21.090 | INFO     | MLExpRecords.experiment:set_training_config:427 - 设置训练配置信息完成
+2025-04-30 18:01:21.090 | INFO     | MLExpRecords.experiment:log_epoch:704 - 创建新轮次 'epoch_1'
+2025-04-30 18:01:21.091 | INFO     | MLExpRecords.experiment:log_epoch:725 - 记录轮次 'epoch_1'
+2025-04-30 18:01:21.096 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml
+2025-04-30 18:01:21.097 | INFO     | MLExpRecords.experiment:log_batch:780 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 18:01:21.103 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml
+2025-04-30 18:01:21.103 | INFO     | MLExpRecords.experiment:log_batch:780 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 18:01:21.111 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml
+2025-04-30 18:01:21.111 | INFO     | MLExpRecords.experiment:log_batch:780 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 18:01:21.118 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml
+2025-04-30 18:01:21.126 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment 'NoTorchTest' (ID: NoTorchTest_518065bb, Stage: None-None-实验_NoTorchTest_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml
+2025-04-30 18:01:22.333 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 18:01:22.553 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 18:01:22.622 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 18:01:22.623 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 '未命名实验' (ID: 未命名实验_0f76c55b)
+2025-04-30 18:01:22.630 | INFO     | MLExpRecords.experiment:save_task:565 - Experiment '未命名实验' (ID: 未命名实验_0f76c55b, Stage: None-None-实验_未命名实验_的主阶段) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\未命名实验\None-None-实验_未命名实验_的主阶段\20250430_180122.yaml
+2025-04-30 18:01:22.766 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 18:01:22.971 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:471 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 18:01:23.039 | INFO     | MLExpRecords.experiment:_create_stage:142 - 创建实验阶段并自动获取环境信息
+2025-04-30 18:01:23.039 | INFO     | MLExpRecords.experiment:__init__:86 - 创建实验 'NoTorchTest' (ID: NoTorchTest_518065bb)
+2025-04-30 18:01:23.039 | INFO     | MLExpRecords.experiment:load_experiment_from_yaml:950 - 成功从文件加载 Experiment 实例: D:\projects\MLExpRecords\experiment_records\NoTorchTest\None-None-实验_NoTorchTest_的主阶段\20250430_180120.yaml

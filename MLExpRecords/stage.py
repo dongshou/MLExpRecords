@@ -1,11 +1,8 @@
 """
 experiment_tracker/stage.py - Stage 类定义
 """
-
+from pathlib import Path
 from typing import Any, Dict, List, Optional
-
-from loguru import logger
-
 from .round import Round
 
 class Stage:
@@ -16,7 +13,6 @@ class Stage:
     def __init__(self,
                  stage_id: str,
                  description: Optional[str] = None,
-                 hardware_info: Optional[Dict[str, Any]] = None,
                  local_env_versions: Optional[Dict[str, str]] = None,
                  git_info: Optional[Dict[str, Any]] = None,  # Git版本信息
                  script_path: Optional[str] = None,  # 运行脚本路径
@@ -25,11 +21,9 @@ class Stage:
                  optimizer_info: Optional[Dict[str, Any]] = None,  # 优化器信息
                  hyperparameters: Optional[Dict[str, Any]] = None,  # 超参数信息
                  training_parameters: Optional[Dict[str, Any]] = None,  # 训练参数
-                 network_config: Optional[Dict[str, Any]] = None,  # 网络配置
                  remarks: Optional[str] = None):
         self.stage_id = stage_id
         self.description = description if description else ""
-        self.hardware_info = hardware_info if hardware_info else {}
         self.local_env_versions = local_env_versions if local_env_versions else {}
         self.git_info = git_info if git_info else {}
         self.script_path = script_path
@@ -38,7 +32,7 @@ class Stage:
         self.optimizer_info = optimizer_info if optimizer_info else {}
         self.hyperparameters = hyperparameters if hyperparameters else {}
         self.training_parameters = training_parameters if training_parameters else {}
-        self.network_config = network_config if network_config else {}
+        self._get_stage_dir_name()
         self.remarks = remarks
         self.rounds: List[Round] = []
 
@@ -63,7 +57,6 @@ class Stage:
         return {
             "stage_id": self.stage_id,
             "description": self.description,
-            "hardware_info": self.hardware_info,
             "local_env_versions": self.local_env_versions,
             "git_info": self.git_info,
             "script_path": self.script_path,
@@ -72,7 +65,6 @@ class Stage:
             "optimizer_info": self.optimizer_info,
             "hyperparameters": self.hyperparameters,
             "training_parameters": self.training_parameters,
-            "network_config": self.network_config,
             "remarks": self.remarks,
             "rounds": [r.to_dict() for r in self.rounds],
         }
@@ -85,7 +77,6 @@ class Stage:
         inst = cls(
             stage_id=data.get("stage_id", "main"),
             description=data.get("description", ""),
-            hardware_info=data.get("hardware_info", None),
             local_env_versions=data.get("local_env_versions", None),
             git_info=data.get("git_info", None),
             script_path=data.get("script_path", None),
@@ -94,10 +85,27 @@ class Stage:
             optimizer_info=data.get("optimizer_info", None),
             hyperparameters=data.get("hyperparameters", None),
             training_parameters=data.get("training_parameters", None),
-            network_config=data.get("network_config", None),
             remarks=data.get("remarks", None),
         )
         rounds_data = data.get("rounds", [])
         for r_data in rounds_data:
             inst.add_round(Round.from_dict(r_data))
         return inst
+
+
+    def _get_stage_dir_name(self) -> str:
+        """
+        返回实验根目录路径，使用对用户友好的描述信息作为文件夹名，
+        替换不合法文件名字符。
+
+        路径格式：
+            base_dir / friendly_experiment_name
+
+        直接返回目录路径，不负责创建目录。
+        """
+        if not getattr(self,'dir_name',None):
+            desc = getattr(self, "description", "default_stage").strip()
+            desc_str = f'{self.model_info.get("name","None")}-{self.dataset_info.get("name","None")}-{desc}'
+            desc_clean = ''.join(c if c.isalnum() or c in ('-', '_') else '_' for c in desc_str)
+            self.dir_name = desc_clean
+        return self.dir_name

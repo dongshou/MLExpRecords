@@ -1,21 +1,18 @@
 """
 experiment_tracker/experiment.py - Experiment 类定义
 """
-
+import hashlib
 import os
 import time
-import socket
 import platform
 import psutil
-import getpass
 import subprocess
 import concurrent.futures
 import threading
 import sys
 import yaml
-import uuid
+import datetime
 from pathlib import Path
-from datetime import datetime
 from typing import Any, Dict, List, Optional
 
 from loguru import logger
@@ -38,21 +35,24 @@ class Experiment:
                  stage_description: Optional[str] = None,  # 阶段描述
                  auto_save: bool = True,
                  auto_save_path: Optional[Path] = None,
+                 env_dependency:bool = False,
                  verbose: bool = False):
-        # 生成唯一实验ID
-        self.experiment_id = self._generate_experiment_id()
 
         # 用户提供的基本信息
         self.name = name
         self.description = description if description else ""
-        self.remarks = ""
+        # 生成唯一实验ID
+        self.experiment_id = self._generate_experiment_id()
 
         # 自动获取的环境信息（元数据）
-        self.start_time = time.time()
+        self.start_time = datetime.datetime.now()
         self.code_version = self._gather_code_version()
         self.env_config = self._gather_env_config()
-        self.dependencies = self._gather_dependencies()
-
+        if env_dependency:
+            self.dependencies = self._gather_dependencies()
+        else:
+            self.dependencies = []
+        self._get_experiment_dir()
         # 异步保存配置
         self.auto_save = auto_save
         self._auto_save_path = auto_save_path
@@ -66,13 +66,62 @@ class Experiment:
 
         # 创建单一阶段并自动获取Git信息和脚本路径
         stage_desc = stage_description if stage_description else f"实验'{self.name}'的主阶段"
+        self.hardware = self._get_hardware_info()
         self.stage = self._create_stage(stage_desc)
+
+        self.status = "success"  # 状态，默认挂起
+
+        # 新增：保存异常信息
+        self._exception_info = None
+        # 保存原始的异常钩子，防止覆盖
+        self._original_excepthook = sys.excepthook
+
+        # 安装自定义异常钩子
+        self._install_exception_hook()
 
         # 初始化时自动保存一次
         if self.auto_save:
             self._auto_save()
 
         logger.info(f"创建实验 '{self.name}' (ID: {self.experiment_id})")
+
+    def get_last_exception(self) -> Optional[dict]:
+        """
+        获取最近捕获的未处理异常信息，返回字典或None。
+        """
+        return self._exception_info
+
+    def _install_exception_hook(self):
+        """
+        安装全局未捕获异常钩子，捕获未处理异常自动标记实验失败
+        """
+
+        def excepthook(exc_type, exc_value, exc_traceback):
+            # 记录异常信息字符串
+            import traceback
+            tb_str = ''.join(traceback.format_exception(exc_type, exc_value, exc_traceback))
+
+            self._exception_info = {
+                "exception_type": str(exc_type),
+                "exception_value": str(exc_value),
+                "traceback": tb_str,
+                "time": datetime.datetime.now().isoformat(),
+            }
+
+            # 自动标记失败
+            self.status = "failure"
+
+            logger.error(f"检测到未捕获异常，自动将实验状态标记为失败:\n{tb_str}")
+
+            # 保存当前状态
+            if self.auto_save:
+                self._auto_save()
+
+            # 继续调用之前的异常钩子以保证后续处理
+            if self._original_excepthook:
+                self._original_excepthook(exc_type, exc_value, exc_traceback)
+
+        sys.excepthook = excepthook
 
     def _create_stage(self, description: str) -> Stage:
         """创建实验的单一阶段，自动获取Git信息和脚本路径"""
@@ -82,14 +131,10 @@ class Experiment:
         # 获取当前运行脚本路径
         script_path = self._get_script_path()
 
-        # 获取硬件信息
-        hardware_info = self._get_hardware_info()
-
         # 创建阶段
         stage = Stage(
             stage_id="main",
             description=description,
-            hardware_info=hardware_info,
             git_info=git_info,
             script_path=script_path
         )
@@ -383,13 +428,6 @@ class Experiment:
         if self.auto_save:
             self._auto_save()
 
-    def set_remarks(self, remarks: str):
-        """设置实验备注"""
-        self.remarks = remarks
-        logger.info(f"设置实验备注")
-        if self.auto_save:
-            self._auto_save()
-
     def _get_hardware_info(self) -> Dict[str, Any]:
         """获取硬件信息（CPU、内存、GPU）"""
         try:
@@ -452,20 +490,6 @@ class Experiment:
         # 检查是否有未提交的变更（工作目录是否干净）
         dirty_status = self._run_git_cmd(["status", "--porcelain"])
         git_info["dirty"] = bool(dirty_status)
-        # 如果有未提交变更，获取差异内容
-        if git_info["dirty"]:
-            # 获取未暂存的变更
-            unstaged_diff = self._run_git_cmd(["diff"])
-            # 获取已暂存但未提交的变更
-            staged_diff = self._run_git_cmd(["diff", "--cached"])
-            # 合并差异内容
-            git_info["diff"] = {
-                "unstaged": unstaged_diff,
-                "staged": staged_diff
-            }
-        else:
-            git_info["diff"] = {}
-
         return git_info
 
     def _get_script_path(self) -> str:
@@ -485,31 +509,66 @@ class Experiment:
         if self.verbose:
             logger.add(sys.stderr, format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}", level="INFO", colorize=True)
 
+    def _get_experiment_dir(self) -> Path:
+        """
+        返回实验根目录路径，使用对用户友好的描述信息作为文件夹名，
+        替换不合法文件名字符。
+
+        路径格式：
+            base_dir / friendly_experiment_name
+
+        直接返回目录路径，不负责创建目录。
+        """
+        if not getattr(self, "experiment_dir", None):
+            base_dir = Path.cwd() / self.DEFAULT_BASE_DIR
+
+            desc = getattr(self, "name", "experiment").strip()
+            desc_clean = ''.join(c if c.isalnum() or c in ('-', '_') else '_' for c in desc)
+
+            self.experiment_dir = base_dir / desc_clean
+
+        return self.experiment_dir
+
     def _auto_save(self):
         """
         异步触发自动保存，提交后台线程执行写文件动作。
         如果前一次写入任务还没完成，等待其完成后重新提交，确保最新状态保存。
+
+        保存路径规则：
+            - 最外层为 experiment_id 文件夹
+            - 第二层为 stage_id 文件夹
+            - 相同 experiment_id 和 stage_id 的数据保存到相同目录
+            - 保存的yaml文件名自动避免覆盖，若存在则增加数字后缀防止覆盖
+        保存内容：
+            - 保存当前对象的全部内容（调用 self.to_dict()）
         """
+
         def save_task():
             try:
-                save_path = self._auto_save_path
-                if save_path is None:
-                    base_dir = Path.cwd() / self.DEFAULT_BASE_DIR
-                    experiment_dir = base_dir / self.experiment_id
-                    experiment_dir.mkdir(parents=True, exist_ok=True)
-                    save_path = experiment_dir / "experiment_info.yaml"
-                else:
-                    save_path = Path(save_path)
-                    save_path.parent.mkdir(parents=True, exist_ok=True)
+                # 根目录和实验目录
+                experiment_dir = self._get_experiment_dir()
+                experiment_dir.mkdir(parents=True, exist_ok=True)
 
+                # 获取stage_id字符串，若无则用默认，确保有目录
+                stage_dir = experiment_dir / self.stage._get_stage_dir_name()
+                stage_dir.mkdir(parents=True, exist_ok=True)
+
+                # 生成带时间戳和描述的文件名，避免覆盖
+                timestamp =self.start_time.strftime("%Y%m%d_%H%M%S")
+                base_file_name = f"{timestamp}.yaml"
+                save_path = stage_dir / base_file_name
+
+                # 写入yaml文件
                 with save_path.open("w", encoding="utf-8") as f:
                     yaml.safe_dump(self.to_dict(), f, allow_unicode=True, sort_keys=False)
-                logger.info(f"Experiment '{self.name}' (ID: {self.experiment_id}) 异步自动保存到 YAML 文件: {save_path}")
+
+                logger.info(
+                    f"Experiment '{self.name}' (ID: {self.experiment_id}, Stage: {self.stage._get_stage_dir_name()}) 异步自动保存到 YAML 文件: {save_path}")
+
             except Exception as e:
                 logger.error(f"自动保存 Experiment '{self.name}' 失败: {e}")
 
         with self._auto_save_lock:
-            # 如果已有任务在执行且未完成，等它完成后重新提交保存任务
             if self._auto_save_future is not None and not self._auto_save_future.done():
                 try:
                     self._auto_save_future.result()  # 等待完成，防止同时并发写文件
@@ -519,12 +578,23 @@ class Experiment:
             self._auto_save_future = self._executor.submit(save_task)
 
     def _generate_experiment_id(self) -> str:
-        """生成唯一的实验ID"""
-        user = getpass.getuser()
-        hostname = socket.gethostname()
-        dt_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-        uid = str(uuid.uuid4())[:8]  # 添加一个随机UUID部分，确保唯一性
-        return f"{user}_{hostname}_{dt_str}_{uid}"
+        """
+        根据描述信息生成唯一且稳定的实验ID。
+        相同描述信息生成的ID保持一致，格式示例：desc_{hash}。
+
+        参数:
+            description: 实验描述字符串
+
+        返回:
+            生成的实验ID字符串
+        """
+        # 使用描述信息的hash作为唯一标识，截取前8位
+        description = self.name if self.name else 'default_exp'
+        desc_hash = hashlib.md5(description.encode('utf-8')).hexdigest()[:8]
+        # 格式化描述去除空白并限制长度
+        desc_clean = ''.join(c if c.isalnum() else '_' for c in description.strip())[:20]
+        experiment_id = f"{desc_clean}_{desc_hash}"
+        return experiment_id
 
     def set_verbose(self, verbose: bool):
         """动态控制是否打印日志到控制台"""
@@ -622,8 +692,6 @@ class Experiment:
         if round_obj is None:
             # 构建轮次参数
             round_params = {}
-            if message:
-                round_params['remarks'] = message
             if dataset_info:
                 round_params['dataset_info'] = dataset_info
 
@@ -642,8 +710,6 @@ class Experiment:
             round_obj.val_metrics = val_metrics
         if model_path:
             round_obj.model_weight_path = model_path
-        if message and not round_obj.remarks:
-            round_obj.remarks = message
         if dataset_info and not round_obj.dataset_info:
             round_obj.dataset_info = dataset_info
 
@@ -823,11 +889,11 @@ class Experiment:
             "experiment_id": self.experiment_id,
             "name": self.name,
             "description": self.description,
+            "hardware": self.hardware,
             "start_time": self.start_time,
             "code_version": self.code_version,
             "env_config": self.env_config,
             "dependencies": self.dependencies,
-            "remarks": self.remarks,
             "stage": self.stage.to_dict(),
         }
 
@@ -847,7 +913,6 @@ class Experiment:
         inst.code_version = data.get("code_version", {})
         inst.env_config = data.get("env_config", {})
         inst.dependencies = data.get("dependencies", {})
-        inst.remarks = data.get("remarks", "")
 
         # 恢复阶段信息
         if "stage" in data:
@@ -855,44 +920,36 @@ class Experiment:
 
         return inst
 
-    def save_to_yaml(self, file_path: Optional[Path] = None):
-        """
-        保存当前实验对象为yaml文件。
-        如果未指定 file_path，则默认保存到 ./experiment_records/{experiment_id}/experiment_info.yaml
-        """
-        if file_path is None:
-            base_dir = Path.cwd() / self.DEFAULT_BASE_DIR
-            experiment_dir = base_dir / self.experiment_id
-            experiment_dir.mkdir(parents=True, exist_ok=True)
-            file_path = experiment_dir / "experiment_info.yaml"
-        else:
-            file_path = Path(file_path)
-            file_path.parent.mkdir(parents=True, exist_ok=True)
-
-        with file_path.open("w", encoding="utf-8") as f:
-            yaml.safe_dump(self.to_dict(), f, allow_unicode=True, sort_keys=False)
-        logger.info(f"Experiment '{self.name}' (ID: {self.experiment_id}) 保存到 YAML 文件: {file_path}")
-
     @classmethod
-    def load_from_yaml(cls, file_path: Optional[Path] = None, experiment_id: Optional[str] = None) -> "Experiment":
+    def load_experiment_from_yaml(cls, yaml_path: Path):
         """
-        从yaml文件加载实验对象
-        如果未指定 file_path，则必须指定 experiment_id，
-        文件路径默认为 ./experiment_records/{experiment_id}/experiment_info.yaml
+        从指定路径的yaml文件加载实验对象（类实例）。
+
+        参数:
+            cls: 当前experiment类，用于构造实例
+            yaml_path: yaml文件的完整路径，Path对象或字符串
+
+        返回:
+            实例化的experiment对象，失败返回None
         """
-        if file_path is None:
-            if not experiment_id:
-                raise ValueError("必须指定 experiment_id，或传入 file_path")
-            file_path = Path.cwd() / cls.DEFAULT_BASE_DIR / experiment_id / "experiment_info.yaml"
-        else:
-            file_path = Path(file_path)
+        try:
+            yaml_path = Path(yaml_path)
+            if not yaml_path.is_file():
+                logger.error(f"指定的yaml文件不存在: {yaml_path}")
+                return None
 
-        if not file_path.is_file():
-            raise FileNotFoundError(f"Yaml文件不存在: {file_path}")
+            with yaml_path.open("r", encoding="utf-8") as f:
+                data = yaml.safe_load(f)
 
-        with file_path.open("r", encoding="utf-8") as f:
-            data = yaml.safe_load(f)
+            exp_instance = cls()
+            if hasattr(exp_instance, "from_dict") and callable(getattr(exp_instance, "from_dict")):
+                exp_instance = exp_instance.from_dict(data)
+            else:
+                exp_instance.__dict__.update(data)
 
-        logger.info(f"从YAML文件加载实验对象: {file_path}")
-        exp = cls.from_dict(data)
-        return exp
+            logger.info(f"成功从文件加载 Experiment 实例: {yaml_path}")
+            return exp_instance
+
+        except Exception as e:
+            logger.error(f"从文件加载 Experiment 失败: {e}")
+            return None

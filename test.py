@@ -109,29 +109,25 @@ class TestExperimentNoTorch(unittest.TestCase):
                 self.assertIsNotNone(entry)
                 self.assertIn("batch_loss", entry.scalar_metrics)
 
-        # 设置备注
-        self.exp.set_remarks("Test completed")
-
         # 等待自动保存完成
         time.sleep(1)
 
         # 验证yaml文件存在
         base_dir = Path.cwd() / self.exp.DEFAULT_BASE_DIR
-        exp_dir = base_dir / self.exp.experiment_id
-        yaml_path = exp_dir / "experiment_info.yaml"
+        exp_dir = base_dir / self.exp._get_experiment_dir() /self.exp.stage._get_stage_dir_name()
+        yaml_path = exp_dir/f'{self.exp.start_time.strftime("%Y%m%d_%H%M%S")}.yaml'
         self.assertTrue(yaml_path.exists())
 
         # 从yaml加载实验
-        loaded_exp = Experiment.load_from_yaml(yaml_path)
+        loaded_exp = Experiment.load_experiment_from_yaml(yaml_path)
         self.assertEqual(loaded_exp.name, self.exp.name)
-        self.assertEqual(loaded_exp.remarks, "Test completed")
         self.assertEqual(len(loaded_exp.stage.rounds), len(self.exp.stage.rounds))
 
-    def tearDown(self):
-        # 清理保存目录
-        base_dir = Path.cwd() / self.exp.DEFAULT_BASE_DIR
-        if base_dir.exists():
-            shutil.rmtree(base_dir)
+    # def tearDown(self):
+    #     # 清理保存目录
+    #     base_dir = Path.cwd() / self.exp.DEFAULT_BASE_DIR
+    #     if base_dir.exists():
+    #         shutil.rmtree(base_dir)
 
 if __name__ == "__main__":
     unittest.main()

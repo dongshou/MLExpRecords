@@ -27,7 +27,7 @@ class Round:
                  dataset_info: Optional[Dict[str, Any]] = None,
                  custom_data: Optional[Dict[str, Any]] = None):
         self.round_id = round_id
-        self.start_time = start_time if start_time else time.time()
+        self.start_time = start_time if start_time else 'None'
         self.end_time = end_time
         self.train_params = train_params if train_params else {}
         self.train_metrics = train_metrics if train_metrics else {}
