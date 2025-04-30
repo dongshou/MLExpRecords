@@ -1,0 +1,35 @@
+2025-04-30 14:23:48.350 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:410 - 运行Git命令失败: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:23:48.397 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:410 - 运行Git命令失败: Command '['git', 'rev-parse', '--abbrev-ref', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:23:48.436 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:410 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:23:48.579 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:23:48.580 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142342_b2ee414f)
+2025-04-30 14:23:48.677 | INFO     | MLExpRecords.experiment:save_task:484 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142342_b2ee414f) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142342_b2ee414f\experiment_info.yaml
+2025-04-30 14:26:24.652 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:26:24.709 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'rev-parse', '--abbrev-ref', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:26:24.773 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:26:24.936 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:26:24.937 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e)
+2025-04-30 14:26:25.010 | WARNING  | MLExpRecords.experiment:set_training_config:206 - torch is not installed, 跳过模型信息自动提取
+2025-04-30 14:26:25.055 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:25.057 | INFO     | MLExpRecords.experiment:set_training_config:382 - 设置训练配置信息完成
+2025-04-30 14:26:25.058 | INFO     | MLExpRecords.experiment:log_epoch:636 - 创建新轮次 'epoch_1'
+2025-04-30 14:26:25.058 | INFO     | MLExpRecords.experiment:log_epoch:659 - 记录轮次 'epoch_1'
+2025-04-30 14:26:25.145 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:25.145 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_1' 到轮次 'epoch_1'
+2025-04-30 14:26:25.282 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:25.282 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_2' 到轮次 'epoch_1'
+2025-04-30 14:26:25.411 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:25.412 | INFO     | MLExpRecords.experiment:log_batch:714 - 记录批次 'batch_3' 到轮次 'epoch_1'
+2025-04-30 14:26:25.509 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:25.509 | INFO     | MLExpRecords.experiment:set_remarks:389 - 设置实验备注
+2025-04-30 14:26:25.615 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:25.712 | INFO     | MLExpRecords.experiment:save_task:507 - Experiment 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142621_380d633e) 异步自动保存到 YAML 文件: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:26.789 | INFO     | MLExpRecords.experiment:load_from_yaml:896 - 从YAML文件加载实验对象: D:\projects\MLExpRecords\experiment_records\23210_DESKTOP-CT_20250430_142621_380d633e\experiment_info.yaml
+2025-04-30 14:26:26.832 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:26:26.873 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'rev-parse', '--abbrev-ref', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:26:26.916 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:26:29.263 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:26:29.306 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'rev-parse', '--abbrev-ref', 'HEAD']' returned non-zero exit status 128.
+2025-04-30 14:26:29.346 | DEBUG    | MLExpRecords.experiment:_run_git_cmd:433 - 运行Git命令失败: Command '['git', 'describe', '--tags', '--exact-match']' returned non-zero exit status 128.
+2025-04-30 14:26:29.479 | INFO     | MLExpRecords.experiment:_create_stage:97 - 创建实验阶段并自动获取环境信息
+2025-04-30 14:26:29.479 | INFO     | MLExpRecords.experiment:__init__:75 - 创建实验 'NoTorchTest' (ID: 23210_DESKTOP-CT_20250430_142626_1f77beb7)
