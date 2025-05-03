@@ -1,4 +1,3 @@
-```markdown
 # Experiment 类文档
 
 ## 概述
@@ -137,9 +136,3 @@ experiment_records/
 
 1. 自动保存功能默认开启
 2. 实验ID基于实验名称生成
-3. 需要安装以下依赖：
-   - PyTorch
-   - loguru
-   - PyYAML
-   - psutil
-```
